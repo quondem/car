@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body
+    class="h-full bg-black font-primary text-white text-[16px] tracking-[0.16px]"
+  >
+    <div class="flex min-h-full flex-col flex-auto">
+      <header class="py-10">
+        <div class="container flex items-center">
+          <a href="#">
+            <img src="./src/images/header-icon.svg" alt="icon" />
+          </a>
+          <div
+            class="menu flex ml-auto items-center lg:hidden lg:absolute lg:flex-col lg:left-0 lg:right-0 lg:top-[15%] lg:w-full lg:h-[100%] lg:bg-black lg:z-50"
+          >
+            <nav>
+              <ul class="text-white flex gap-12 lg:flex-col lg:items-center">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Book Now</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+              </ul>
+            </nav>
+            <button
+              class="py-3 px-6 bg-orange ml-16 text-white lg:ml-0 lg:mt-6"
+            >
+              Manage Booking
+            </button>
+          </div>
+          <button class="burger hidden ml-auto lg:block">
+            <div class="h-[2px] w-6 bg-white mb-[8px]"></div>
+            <div class="h-[2px] w-6 bg-white mb-[8px]"></div>
+            <div class="h-[2px] w-6 bg-white"></div>
+          </button>
+        </div>
+      </header>
+      <main class="grow">
+        <section class="pb-[40px] my-[60px] relative">
+          <div class="container lg:flex lg:items-center">
+            <div class="max-w-[475px] pt-[60px]">
+              <h1>The World's Best Luxury Car Deals</h1>
+              <p
+                class="mt-8 mb-12 text-[17px] font-normal opacity-80 tracking-[-0.408px]"
+              >
+                HKinvestor can provide rentals of the most exclusive cars like
+                Ferrari and Lamborghini.
+              </p>
+              <button class="py-3 px-6 bg-orange">Buy Now</button>
+              <button
+                class="py-3 px-6 bg-black border border-orange text-orange ml-9 mb-10"
+              >
+                Video Introduction
+              </button>
+              <div class="flex">
+                <div class="flex items-center mr-10">
+                  <span class="font-bold text-[40px]">500+</span>
+                  <span class="ml-4">Luxury Cars</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="font-bold text-[40px]">#1</span>
+                  <span class="ml-4">Best Deal Car</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:hidden absolute top-0 right-0 h-full w-[46%] overflow-visible bg-gray bg-opacity-30 before:absolute before:top-[10%] before:right-0 before:bg-car before:h-full before:w-[111%] before:bg-no-repeat"
+            ></div>
+          </div>
+        </section>
+        <section class="py-[60px]">
+          <h1 class="text-center pb-10">Rent a Luxury Car</h1>
+          <div class="container">
+            <div
+              class="grid grid-cols-2 xl:grid-cols-1 xl:justify-items-center gap-[32px]"
+            >
+              <div
+                class="w-[584px] h-[524px] md:w-[300px] md:h-[300px] relative"
+              >
+                <h2
+                  class="z-10 absolute top-12 left-12 leading-[52px] text-[40px] font-semibold"
+                >
+                  Supercars
+                </h2>
+                <button
+                  class="flex items-center bg-transparent z-10 absolute bottom-12 right-[58px] text-[24px] leading-[32px] font-medium"
+                >
+                  Discover
+                  <img src="/src/images/discover.svg" alt="discover" />
+                </button>
+                <img
+                  src="./src/images/rent-car1.png"
+                  class="absolute top-0 left-0 w-full h-full"
+                  alt="car"
+                />
+              </div>
+              <div
+                class="w-[584px] h-[524px] md:w-[300px] md:h-[300px] relative"
+              >
+                <h2
+                  class="z-10 absolute top-12 left-12 leading-[52px] text-[40px] font-semibold"
+                >
+                  Sportcars
+                </h2>
+                <button
+                  class="flex items-center bg-transparent z-10 absolute bottom-12 right-[58px] text-[24px] leading-[32px] font-medium"
+                >
+                  Discover
+                  <img src="/src/images/discover.svg" alt="discover" />
+                </button>
+                <img
+                  src="./src/images/rent-car2.png"
+                  class="absolute top-0 left-0 w-full h-full"
+                  alt="car"
+                />
+              </div>
+              <div
+                class="w-[584px] h-[524px] md:w-[300px] md:h-[300px] relative"
+              >
+                <h2
+                  class="z-10 absolute top-12 left-12 leading-[52px] text-[40px] font-semibold"
+                >
+                  SUV
+                </h2>
+                <button
+                  class="flex items-center bg-transparent z-10 absolute bottom-12 right-[58px] text-[24px] leading-[32px] font-medium"
+                >
+                  Discover
+                  <img src="/src/images/discover.svg" alt="discover" />
+                </button>
+                <img
+                  src="./src/images/rent-car3.png"
+                  class="absolute top-0 left-0 w-full h-full"
+                  alt="car"
+                />
+              </div>
+              <div
+                class="w-[584px] h-[524px] md:w-[300px] md:h-[300px] relative"
+              >
+                <h2
+                  class="z-10 absolute top-12 left-12 leading-[52px] text-[40px] font-semibold"
+                >
+                  Supersuv
+                </h2>
+                <button
+                  class="flex items-center bg-transparent z-10 absolute bottom-12 right-[58px] text-[24px] leading-[32px] font-medium"
+                >
+                  Discover
+                  <img src="/src/images/discover.svg" alt="discover" />
+                </button>
+                <img
+                  src="./src/images/rent-car4.png"
+                  class="absolute top-0 left-0 w-full h-full"
+                  alt="car"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-[60px]">
+          <div class="container">
+            <h1
+              class="font-bold text-[52px] leading-[64px] tracking-[0.312px] mb-[66px]"
+            >
+              Our Other Services
+            </h1>
+            <div
+              class="grid grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 xl:justify-items-center gap-6"
+            >
+              <a href="#" class="w-[384px] sm:w-[300px]">
+                <img src="src/images/service1.png" alt="service" />
+                <h2
+                  class="text-[24px] font-bold leading-[32px] tracking-[0.144px] mt-6 mb-4"
+                >
+                  Private Charter
+                </h2>
+                <p class="leading-[28px] tracking-[0.096px] opacity-80">
+                  Pinjam Mobil Rent also offers you discreet and speedy,
+                  transfers via helicopter or private planes.
+                </p>
+              </a>
+              <a href="#" class="w-[384px] sm:w-[300px]">
+                <img src="src/images/service2.png" alt="service" />
+                <h2
+                  class="text-[24px] font-bold leading-[32px] tracking-[0.144px] mt-6 mb-4"
+                >
+                  Chauffer Driven Car Rentals
+                </h2>
+                <p class="leading-[28px] tracking-[0.096px] opacity-80">
+                  Our chauffers are professional drivers who provide a discreet,
+                  reliable punctual and professional service.
+                </p>
+              </a>
+              <a href="#" class="w-[384px] sm:w-[300px]">
+                <img src="src/images/service3.png" alt="service" />
+                <h2
+                  class="text-[24px] font-bold leading-[32px] tracking-[0.144px] mt-6 mb-4"
+                >
+                  Wedding Car Rentals
+                </h2>
+                <p class="leading-[28px] tracking-[0.096px] opacity-80">
+                  If you want to celebrate your wedding in style and elegance,
+                  choose one car from our luxury collection.
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="py-[60px]">
+          <h1 class="text-center pb-10">
+            Popular Destination<br />
+            for Car Rentals
+          </h1>
+          <div class="container">
+            <div
+              class="grid grid-cols-3 xl:grid-cols-2 lg:grid-cols-1 xl:justify-items-center gap-6"
+            >
+              <a href="#" class="inline-block w-[384px] sm:w-[300px]">
+                <img
+                  src="src/images/destination1.png"
+                  class="object-cover"
+                  alt="destination"
+                />
+                <div class="p-6 bg-[#131313] border-[#171717] border">
+                  <h2 class="text-2xl font-bold tracking-[0.144px] mb-[10px]">
+                    London
+                  </h2>
+                  <p
+                    class="text-[16px] leading-7 tracking-[0.066px] opacity-80 mb-6"
+                  >
+                    Car hire in 75 pick-up locations
+                  </p>
+                  <div class="flex items-center">
+                    <img src="src/images/cost-car.svg" alt="cost car" />
+                    <p
+                      class="inline-block font-semibold leading-[28px] tracking-[0.066px] ml-3"
+                    >
+                      From $ 669,00 per day
+                    </p>
+                  </div>
+                  <p
+                    class="text-orange leading-[28px] tracking-[0.66px] mt-[17px]"
+                  >
+                    Search rental cars in London
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="inline-block w-[384px] sm:w-[300px]">
+                <img
+                  src="src/images/destination2.png"
+                  class="object-cover"
+                  alt="destination"
+                />
+                <div class="p-6 bg-[#131313] border-[#171717] border">
+                  <h2 class="text-2xl font-bold tracking-[0.144px] mb-[10px]">
+                    Madrid
+                  </h2>
+                  <p
+                    class="text-[16px] leading-7 tracking-[0.066px] opacity-80 mb-6"
+                  >
+                    Car hire in 75 pick-up locations
+                  </p>
+                  <div class="flex items-center">
+                    <img src="src/images/cost-car.svg" alt="cost car" />
+                    <p
+                      class="inline-block font-semibold leading-[28px] tracking-[0.066px] ml-3"
+                    >
+                      From $ 799,00 per day
+                    </p>
+                  </div>
+                  <p
+                    class="text-orange leading-[28px] tracking-[0.66px] mt-[17px]"
+                  >
+                    Search rental cars in Madrid
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="inline-block w-[384px] sm:w-[300px]">
+                <img
+                  src="src/images/destination3.png"
+                  class="object-cover"
+                  alt="destination"
+                />
+                <div class="p-6 bg-[#131313] border-[#171717] border">
+                  <h2 class="text-2xl font-bold tracking-[0.144px] mb-[10px]">
+                    Paris
+                  </h2>
+                  <p
+                    class="text-[16px] leading-7 tracking-[0.066px] opacity-80 mb-6"
+                  >
+                    Car hire in 75 pick-up locations
+                  </p>
+                  <div class="flex items-center">
+                    <img src="src/images/cost-car.svg" alt="cost car" />
+                    <p
+                      class="inline-block font-semibold leading-[28px] tracking-[0.066px] ml-3"
+                    >
+                      From $ 899,00 per day
+                    </p>
+                  </div>
+                  <p
+                    class="text-orange leading-[28px] tracking-[0.66px] mt-[17px]"
+                  >
+                    Search rental cars in Paris
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="inline-block w-[384px] sm:w-[300px]">
+                <img
+                  src="src/images/destination4.png"
+                  class="object-cover"
+                  alt="destination"
+                />
+                <div class="p-6 bg-[#131313] border-[#171717] border">
+                  <h2 class="text-2xl font-bold tracking-[0.144px] mb-[10px]">
+                    Dubai
+                  </h2>
+                  <p
+                    class="text-[16px] leading-7 tracking-[0.066px] opacity-80 mb-6"
+                  >
+                    Car hire in 75 pick-up locations
+                  </p>
+                  <div class="flex items-center">
+                    <img src="src/images/cost-car.svg" alt="cost car" />
+                    <p
+                      class="inline-block font-semibold leading-[28px] tracking-[0.066px] ml-3"
+                    >
+                      From $ 669,00 per day
+                    </p>
+                  </div>
+                  <p
+                    class="text-orange leading-[28px] tracking-[0.66px] mt-[17px]"
+                  >
+                    Search rental cars in Dubai
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="inline-block w-[384px] sm:w-[300px]">
+                <img
+                  src="src/images/destination5.png"
+                  class="object-cover"
+                  alt="destination"
+                />
+                <div class="p-6 bg-[#131313] border-[#171717] border">
+                  <h2 class="text-2xl font-bold tracking-[0.144px] mb-[10px]">
+                    Roma
+                  </h2>
+                  <p
+                    class="text-[16px] leading-7 tracking-[0.066px] opacity-80 mb-6"
+                  >
+                    Car hire in 75 pick-up locations
+                  </p>
+                  <div class="flex items-center">
+                    <img src="src/images/cost-car.svg" alt="cost car" />
+                    <p
+                      class="inline-block font-semibold leading-[28px] tracking-[0.066px] ml-3"
+                    >
+                      From $ 799,00 per day
+                    </p>
+                  </div>
+                  <p
+                    class="text-orange leading-[28px] tracking-[0.66px] mt-[17px]"
+                  >
+                    Search rental cars in Roma
+                  </p>
+                </div>
+              </a>
+              <a href="#" class="inline-block w-[384px] sm:w-[300px]">
+                <img
+                  src="src/images/destination6.png"
+                  class="object-cover"
+                  alt="destination"
+                />
+                <div class="p-6 bg-[#131313] border-[#171717] border">
+                  <h2 class="text-2xl font-bold tracking-[0.144px] mb-[10px]">
+                    Jakarta
+                  </h2>
+                  <p
+                    class="text-[16px] leading-7 tracking-[0.066px] opacity-80 mb-6"
+                  >
+                    Car hire in 75 pick-up locations
+                  </p>
+                  <div class="flex items-center">
+                    <img src="src/images/cost-car.svg" alt="cost car" />
+                    <p
+                      class="inline-block font-semibold leading-[28px] tracking-[0.066px] ml-3"
+                    >
+                      From $ 899,00 per day
+                    </p>
+                  </div>
+                  <p
+                    class="text-orange leading-[28px] tracking-[0.66px] mt-[17px]"
+                  >
+                    Search rental cars in Jakarta
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="py-[102px]">
+          <div class="container">
+            <h1 class="mb-10 text-center">Location</h1>
+            <img src="src/images/location.png" alt="location" />
+          </div>
+        </section>
+      </main>
+      <footer class="w-full bg-[#1F1905]">
+        <div class="container">
+          <div
+            class="pt-[40px] pb-[66px] flex lg:flex-col items-center justify-center"
+          >
+            <div class="w-[235px] md:hidden">
+              <div class="flex items-center mb-16">
+                <img src="src/images/header-icon.svg" alt="icon" />
+                <p
+                  class="font-semibold leading-[24px] tracking-[0.16px] ml-[17px]"
+                >
+                  HKinvision
+                </p>
+              </div>
+              <h2 class="text-[18px] leading-[32px] font-normal">
+                The World's Best Luxury Car’s Dealing Platform
+              </h2>
+            </div>
+            <div
+              class="ml-auto md:ml-0 flex md:flex-col md:items-center md:gap-10 pt-10"
+            >
+              <div
+                class="mr-[67px] md:flex md:flex-col md:items-center md:mr-0"
+              >
+                <h2 class="text-[18px] leading-5 font-bold font-manrope mb-8">
+                  Company
+                </h2>
+                <ul class="md:flex md:flex-col md:items-center">
+                  <li class="mb-7">
+                    <a class="leading-5 opacity-80" href="#">About Us</a>
+                  </li>
+                  <li class="mb-7">
+                    <a class="leading-5 opacity-80" href="#">Product</a>
+                  </li>
+                  <li class="mb-7">
+                    <a class="leading-5 opacity-80" href="#">Testimonial</a>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="mr-[67px] md:mr-0 md:flex md:flex-col md:items-center"
+              >
+                <h2 class="text-[18px] leading-5 font-bold font-manrope mb-8">
+                  Support
+                </h2>
+                <ul class="md:flex md:flex-col md:items-center">
+                  <li class="mb-7">
+                    <a class="leading-5 opacity-80" href="#">FAQ</a>
+                  </li>
+                  <li class="mb-7">
+                    <a class="leading-5 opacity-80" href="#">Privacy Policy</a>
+                  </li>
+                  <li class="mb-7">
+                    <a class="leading-5 opacity-80" href="#"
+                      >Terms of Services</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="mr-[100px] md:mr-0">
+                <h2 class="text-[18px] leading-5 font-bold font-manrope mb-8">
+                  Category
+                </h2>
+                <ul>
+                  <li class="mb-7">
+                    <a class="leading-5 opacity-80" href="#">Super Cars</a>
+                  </li>
+                  <li class="mb-7">
+                    <a class="leading-5 opacity-80" href="#">Sport Cars</a>
+                  </li>
+                  <li class="mb-7">
+                    <a class="leading-5 opacity-80" href="#">More Cars</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-[-30px] md:mr-0">
+                <a href="#">
+                  <img
+                    class="filter brightness-0 invert"
+                    src="src/images/footer-facebook.png"
+                    alt="facebook"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="filter brightness-0 invert"
+                    src="src/images/footer-instagram.png"
+                    alt="instagram"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="filter brightness-0 invert"
+                    src="src/images/footer-youtube.png"
+                    alt="youtube"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-orange h-[68px] flex items-center justify-center">
+          <h2 class="leading-[28px]">©2022 HKInvestor. All right reserved</h2>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

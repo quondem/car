@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        @apply text-[52px] font-bold tracking-[0.312px] leading-[64px]
+    }
+}
+
+@layer base {
+    .container {
+        @apply px-5 mx-auto max-w-[1280px] xl:max-w-[1024px] lg:max-w-[768px] md:max-w-[640px];
+    }
+}
+
+@layer components {}
+
+@layer utilities {}
